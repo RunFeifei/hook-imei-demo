@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.run.binder.BinderActivity"
+    android:orientation="vertical"
+    >
+
+
+    <Button
+        android:id="@+id/text0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="恢复手机原始设定"
+        android:textSize="27dp"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        />
+
+
+    <Button
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="将该手机绑定新的值"
+        android:textSize="27dp"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        />
+
+</LinearLayout>

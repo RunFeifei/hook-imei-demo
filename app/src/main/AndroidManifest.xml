@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.run.binder"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:name=".APP"
+        android:allowBackup="true"
+        android:icon="@mipmap/timg"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/timg"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="解放行Binder" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="30" />
+
+        <activity android:name=".BinderActivity">
+        </activity>
+
+        <provider
+            android:authorities="com.run.binder.data.AppInfoProvider"
+            android:exported="true"
+            android:name=".data.AppInfoProvider"/>
+    </application>
+
+</manifest>
