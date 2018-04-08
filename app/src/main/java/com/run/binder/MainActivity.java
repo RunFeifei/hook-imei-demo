@@ -2,6 +2,8 @@ package com.run.binder;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
@@ -63,7 +65,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 mProgressDialog.dismiss();
                 ToastUtil.show(MainActivity.this, "破解完成,请登录");
             }
-        }, 5000);
+        }, 3000);
     }
 
     @Override
@@ -93,4 +95,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
     }
+
 }

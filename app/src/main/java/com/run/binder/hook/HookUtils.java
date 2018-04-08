@@ -42,7 +42,6 @@ class HookUtils {
                         param.setResult(serialNumber);
                     }
                 });
-
     }
 
 

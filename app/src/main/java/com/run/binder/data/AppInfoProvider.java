@@ -14,12 +14,11 @@ import android.support.annotation.Nullable;
  */
 public class AppInfoProvider extends ContentProvider {
     public static final String AUTHRITY = "com.run.binder.data.AppInfoProvider";
-    public static final Uri APP_CONTENT_URI = Uri.parse("content://" + AUTHRITY + "/app");
     public static final int APP_URI_CODE = 0;
     private static final UriMatcher sUriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
 
     static {
-        sUriMatcher.addURI(AUTHRITY, "app", APP_URI_CODE);
+        sUriMatcher.addURI(AUTHRITY, "bind", APP_URI_CODE);
     }
 
     private SQLiteDatabase mSQLiteDatabase;
